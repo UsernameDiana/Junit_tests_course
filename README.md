@@ -6,12 +6,12 @@ Tests results output:
 
 1. Test to get even numbers:
 
-![alt text]()
+![alt text](https://github.com/UsernameDiana/Junit_tests_course/blob/master/Test_get_even_num.png)
 
 2. Test reading from file:
 
-![alt text]()
+![alt text](https://github.com/UsernameDiana/Junit_tests_course/blob/master/Test_read_from_file.png)
 
 3. Test for exceptions:
 
-![alt text]()
+![alt text](https://github.com/UsernameDiana/Junit_tests_course/blob/master/Test_exception.png)
