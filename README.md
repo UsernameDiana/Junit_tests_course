@@ -4,4 +4,10 @@
 
 Tests results output:
 
-![alt text](https://github.com/UsernameDiana/Junit_tests_course/blob/master/RunTests_1.png)
+1. Test to return all the even numbers:
+
+![alt text]()
+
+2. Test reading from file:
+
+![alt text]()

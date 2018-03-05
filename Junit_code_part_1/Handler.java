@@ -3,7 +3,7 @@ import java.io.IOException;
 
 public interface Handler {
 
-    
+
     /**
      * Read a file
      * @param filename The name of the file to read
@@ -18,7 +18,7 @@ public interface Handler {
      * @return an int array of numbers
      */
     public int[] convertToArray(String content);
-    
+
     /**
      * Sorts an unordered array
      * @param unsorted The array that has to be sorted
@@ -31,45 +31,45 @@ public interface Handler {
      * @param sum The amount a pair needs to equal
      * @param array The array whose values should add up to sum
      * @return truth value of the claim
-     */    
+     */
     public boolean addsUpTo(int sum, int[] array);
-    
+
     /**
      * Calculates if the array only contains prime numbers
      * @param array The sorted array containing the numbers to investigate
      * @return Whether the array consists of only primes or not
      */
     public boolean isOnlyPrimes(int[] array);
-    
+
     /**
      * Extracts the even numbers from the array given
      * @param array The sorted array containing the numbers to investigate
      * @return An array of even numbers and an empty array if there is none.
      */
     public int[] getEvenNumbers(int[] array);
-    
+
     /**
      * Calculate the sum of the numbers in the array
      * @param array The sorted array containing the numbers to investigate
      * @return The sum of the numbers
      */
     public int calculateSum(int[] array);
-    
-    /** 
+
+    /**
      * Merge two integer arrays into one
      * @param array1 First integer array to merge
      * @param array2 Second integer array to merge
      * @return The merged array
      */
     public int[] mergeArrays(int[] array1, int[] array2);
-    
+
     /**
      * Reverse an ordinary array of numbers
      * @param array The array whose numbers need to be changed
      * @return The reversed array
      */
     public int[] reverseArray(int[] array);
-    
+
     /**
      * Removes the duplicate values
      * @param array It may or may not have duplicate values

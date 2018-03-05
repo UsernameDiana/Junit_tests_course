@@ -10,7 +10,7 @@ import impl.Handler;
 
 public class HandlerImpl implements Handler {
     public static final String FILENAME = "numbers.txt";
-    
+
     @Override
     public int[] sortArray(int[] array) {
         Arrays.sort(array);
@@ -20,13 +20,13 @@ public class HandlerImpl implements Handler {
     @Override
     public String readFile(String filename) throws IOException {
         String contents = new String(Files.readAllBytes(Paths.get(filename)));
-        return contents;        
+        return contents;
     }
 
     @Override
     public int[] convertToArray(String content) {
         String[] strContent = content.split(" ");
-        
+
         // count number of values
         int numberOfIntValues = 0;
         for (String strNum : strContent) {
@@ -34,13 +34,13 @@ public class HandlerImpl implements Handler {
                 int num = Integer.parseInt(strNum);
                 numberOfIntValues++;
             } catch (Exception ex) {
-                
+
             }
         }
-        
+
         // create array as big as needed
         int[] intArray = new int[numberOfIntValues];
-        
+
         int i = 0;
         for (String strNum : strContent) {
             try {
@@ -56,15 +56,15 @@ public class HandlerImpl implements Handler {
 
     @Override
     public boolean addsUpTo(int sum, int[] array) {
-    		int count = 0;
-    		for (int number : array) {
-    			count =+ number;
-    		}
-    		if (sum == count) {
-    			return true;
-    		} else {
-    			return false;
-    		}
+        int count = 0;
+        for (int number : array) {
+            count =+ number;
+        }
+        if (sum == count) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override
@@ -75,31 +75,31 @@ public class HandlerImpl implements Handler {
     @Override
     public int[] getEvenNumbers(int[] array) {
         int[] evens = new int[array.length];
-        
+
         int index = 0;
         for (int number : array) {
-        		if (number % 2 == 0) {
-        			evens[index] = number;
-        			index++;
-        		}
+            if (number % 2 == 0) {
+                evens[index] = number;
+                index++;
+            }
         }
-        
+
         // trim array to remove unused spots - #javaLoveAndHate
         int[] evensTrimmed = new int[index];
         for (int i = 0; i < index; i++) {
-        		evensTrimmed[i] = evens[i];
+            evensTrimmed[i] = evens[i];
         }
-        
+
         return evensTrimmed;
     }
 
     @Override
     public int calculateSum(int[] array) {
-		int count = 0;
-		for (int number : array) {
-			count += number;
-		}
-		return count;
+        int count = 0;
+        for (int number : array) {
+            count += number;
+        }
+        return count;
     }
 
     @Override
@@ -116,5 +116,5 @@ public class HandlerImpl implements Handler {
     public int[] removeDuplicates(int[] array) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
 }
