@@ -4,10 +4,14 @@
 
 Tests results output:
 
-1. Test to return all the even numbers:
+1. Test to get even numbers:
 
 ![alt text]()
 
 2. Test reading from file:
+
+![alt text]()
+
+3. Test for exceptions:
 
 ![alt text]()
